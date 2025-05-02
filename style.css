@@ -1,0 +1,102 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('us.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #222;
+  line-height: 1.6;
+}
+
+h2 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+header h1:hover {
+  color: hotpink;
+  transform: scale(1.1);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+header p:hover {
+  color: deeppink;
+  font-style: italic;
+}
+
+.photos {
+  margin-bottom: 2rem;
+}
+
+.photos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.letter {
+  background: #ffeef1;
+  padding: 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 2rem;
+}
